@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_menu">
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.box4utoolbox.ui.menu.MenuFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/nav_kamera"
+        android:name="com.box4utoolbox.ui.kamera.KameraFragment"
+        android:label="Kamera"
+        tools:layout="@layout/fragment_kamera" />
+
+    <fragment
+        android:id="@+id/nav_galeria"
+        android:name="com.box4utoolbox.ui.galeria.GaleriaFragment"
+        android:label="Galeria"
+        tools:layout="@layout/fragment_galeria" />
+
+    <fragment
+        android:id="@+id/nav_cennik"
+        android:name="com.box4utoolbox.ui.cennik.CennikFragment"
+        android:label="@string/cennik"
+        tools:layout="@layout/fragment_cennik" />
+    <fragment
+        android:id="@+id/nav_magazyn"
+        android:name="com.box4utoolbox.ui.magazyn.MagazynFragment"
+        android:label="@string/magazyn"
+        tools:layout="@layout/fragment_magazyn" />
+    <fragment
+        android:id="@+id/nav_wydruki"
+        android:name="com.box4utoolbox.ui.wydruki.WydrukiFragment"
+        android:label="@string/wydruki"
+        tools:layout="@layout/fragment_wydruki" />
+    <fragment
+        android:id="@+id/nav_ustawienia_lasera"
+        android:name="com.box4utoolbox.ui.ustawienia_lasera.Ustawienia_laseraFragment"
+        android:label="Ustawienia lasera"
+        tools:layout="@layout/fragment_ustawienia_lasera" />
+
+</navigation>

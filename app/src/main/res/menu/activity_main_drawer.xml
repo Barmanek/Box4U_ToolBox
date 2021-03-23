@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_kamera"
+            android:icon="@drawable/ic_menu_kamera"
+            android:title="@string/kamera" />
+        <item
+            android:id="@+id/nav_galeria"
+            android:icon="@drawable/ic_menu_galeria"
+            android:title="@string/galeria" />
+        <item
+            android:id="@+id/nav_ustawienia_lasera"
+            android:icon="@drawable/ic_menu_ustawienia_lasera"
+            android:title="@string/ustawienia_lasera" />
+        <item
+            android:id="@+id/nav_cennik"
+            android:icon="@drawable/ic_menu_cennik"
+            android:title="@string/cennik" />
+        <item
+            android:id="@+id/nav_magazyn"
+            android:icon="@drawable/ic_menu_magazyn"
+            android:title="@string/magazyn" />
+        <item
+            android:id="@+id/nav_wydruki"
+            android:icon="@drawable/ic_menu_wydruki"
+            android:title="@string/wydruki" />
+    </group>
+</menu>
