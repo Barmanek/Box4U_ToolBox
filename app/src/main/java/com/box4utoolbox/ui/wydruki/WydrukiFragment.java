@@ -15,21 +15,10 @@ import androidx.lifecycle.ViewModelProvider;
 import com.box4utoolbox.R;
 
 public class WydrukiFragment extends Fragment {
-
-    private WydrukiViewModel wydrukiViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        wydrukiViewModel =
-                new ViewModelProvider(this).get(WydrukiViewModel.class);
         View root = inflater.inflate(R.layout.fragment_wydruki, container, false);
         final TextView textView = root.findViewById(R.id.text_wydruki);
-        wydrukiViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 }

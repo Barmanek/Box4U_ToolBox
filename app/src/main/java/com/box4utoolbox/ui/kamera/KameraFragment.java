@@ -16,20 +16,10 @@ import com.box4utoolbox.R;
 
 public class KameraFragment extends Fragment {
 
-    private KameraViewModel kameraViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        kameraViewModel =
-                new ViewModelProvider(this).get(KameraViewModel.class);
         View root = inflater.inflate(R.layout.fragment_kamera, container, false);
         final TextView textView = root.findViewById(R.id.text_kamera);
-        kameraViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 }

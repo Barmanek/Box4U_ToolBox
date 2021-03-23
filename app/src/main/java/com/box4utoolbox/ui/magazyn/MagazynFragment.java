@@ -16,20 +16,10 @@ import com.box4utoolbox.R;
 
 public class MagazynFragment extends Fragment {
 
-    private MagazynViewModel magazynViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        magazynViewModel =
-                new ViewModelProvider(this).get(MagazynViewModel.class);
         View root = inflater.inflate(R.layout.fragment_magazyn, container, false);
         final TextView textView = root.findViewById(R.id.text_magazyn);
-        magazynViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 }

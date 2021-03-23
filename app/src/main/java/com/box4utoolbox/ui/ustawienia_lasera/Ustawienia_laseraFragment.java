@@ -16,20 +16,10 @@ import com.box4utoolbox.R;
 
 public class Ustawienia_laseraFragment extends Fragment {
 
-    private Ustawienia_laseraViewModel ustawienia_laseraViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ustawienia_laseraViewModel =
-                new ViewModelProvider(this).get(Ustawienia_laseraViewModel.class);
         View root = inflater.inflate(R.layout.fragment_ustawienia_lasera, container, false);
         final TextView textView = root.findViewById(R.id.text_ustawienia_lasera);
-        ustawienia_laseraViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 }
