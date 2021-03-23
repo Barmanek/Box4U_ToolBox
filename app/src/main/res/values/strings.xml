@@ -18,14 +18,17 @@
     <string name="wydruki">Wydruki</string>
     <string name="box4u_ebay_store_gmail_com">box4u.ebay.store@gmail.com</string>
     <string name="box4u">Box4U</string>
-    <string name="todo">TODO</string>
     <string name="ustawienia">Ustawienia</string>
 
-    <string name="title_menu">Tu zrobie menu</string>
+    <string name="title_menu">Tu bedzie temperatura</string>
     <string name="title_kamera">Tu bedzie podglad kamery</string>
-    <string name="title_galeria">Tu zrobie galerie</string>
     <string name="title_laser">Tu bedzie lista ustawien lasera</string>
     <string name="title_cennik">Zawartosc cennika</string>
     <string name="title_magazyn">Tu bedzie spis przedmiotow</string>
     <string name="title_wydruki">Tu bedzie lista wydrukow</string>
+    <string name="todo">TODO</string>
+    <string name="pic_1">pic_1</string>
+    <string name="pic_2">pic_2</string>
+    <string name="tlo_1" />
+
 </resources>
